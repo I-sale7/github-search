@@ -1,0 +1,45 @@
+.dropdown-component{
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 120px;
+  user-select: none;
+
+  &__select{
+    display: none;
+  }
+  &__lists{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+    &.open{
+      padding: 7px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      width: 200px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__list{
+    padding: 10px;
+    color: #000;
+    &:hover{
+      background: #f1f1f1;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    &-link{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

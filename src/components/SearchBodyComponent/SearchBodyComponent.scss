@@ -1,0 +1,59 @@
+.main-top{
+  background: url('../../../public/images/pxfuel.jpg') no-repeat rgb(10,10,20);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px 100px 20px;
+  box-sizing: border-box;
+  transition: 600ms;
+
+  &--show-result{
+    transition: 600ms;
+  }
+
+  &__search{
+    &, &-input{
+      height: 60px;
+      min-width: 80vw;
+      border-radius: 30px;
+    }
+
+    &-input{
+      background: linear-gradient(10deg, rgba(255,255,255,0.4) 10%,
+        rgba(255,255,255,0.6) 20%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.8) 100%);
+        font-size: 20px;
+        transition: 600ms;
+        padding-inline: 20px;
+        &:hover, &:focus{
+          transition: 600ms;
+          box-shadow: 3px 3px 10px rgba(255,255,255,0.6);
+          background: linear-gradient(45deg, rgba(255,255,255,0.8) 10%,
+            rgba(255,255,255,0.8) 12%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.8) 90%);
+        }
+      &::placeholder{
+        color: #181f6a;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  &__logo{
+    display: block;
+    min-height: 30vh;
+    max-height: 50vh;
+    margin: auto;
+    width: auto;
+    max-width: 250px;
+    &-container{
+      margin-bottom: 70px;
+    }
+    &-title{
+      font-size: 70px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}

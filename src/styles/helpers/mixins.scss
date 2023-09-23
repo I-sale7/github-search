@@ -1,0 +1,5 @@
+@mixin random-border(){
+  $color1: rgb(random(220), random(220), random(220));
+  border: 1px solid $color1;
+  color: $color1;
+}
